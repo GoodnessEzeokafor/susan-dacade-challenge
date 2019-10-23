@@ -158,13 +158,14 @@ $('#addProductBtn').click(async function(){
     console.log("Image Url:",new_product_image_url)
     const new_product = await contractCall('add_new_product', [new_product_name, new_product_price, new_product_image_url],0);
     console.log("SAVED TO THE DB", new_product)
+    console.log(productListLength + 1)
     // bucketlistArr.push({
     //   index_counter: bucketlistLength.length + 1,
     //   bucketlist: new_bucketlist,
     // })
     productListArr.push({
-        index_counter: productListLength.length + 1,
-        id:productListLength.length + 1,
+        index_counter: productListArr.length + 1,
+        id:parseintproductListArr.length + 1,
         name:new_product_name,
         images:new_product_image_url
     })
@@ -200,3 +201,5 @@ $("#productListBody").on("click",".buyBtn", async function(event){
   console.log("Just Clicked The Buy Button")
   event.preventDefault();
 });
+
+// https://tatyanaseverydayfood.com/wp-content/uploads/2018/07/Summer-Sangria-Cake-4.jpg
