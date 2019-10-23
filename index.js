@@ -146,3 +146,43 @@ window.addEventListener('load', async() => {
     $("#loader").hide();
   });
 
+  // ADD AN ITEM
+  //If someone clicks to register a moment, get the input and execute the registerCall
+$('##addProductBtn').click(async function(){
+    $("#loader").show();
+    console.log("Button Clicked")
+    const new_product_name = ($('#name').val());
+    const new_product_price = ($("#price").val());
+    const new_product_image_url = ($("#images").val());
+    console.log("-------------------------------------")
+    console.log("Name:",new_product_name)
+    console.log("Price:",new_product_price)
+    console.log("Image Url:",new_product_image_url)
+    const shit = await contractCall('add_new_product', [new_product_name, new_product_price, new_product_image_url],0);
+    console.log("SAVED TO THE DB", shit)
+    // bucketlistArr.push({
+    //   index_counter: bucketlistLength.length + 1,
+    //   bucketlist: new_bucketlist,
+    // })
+    productListArr.push({
+        index_counter: productListLength.length + 1,
+        id:productListLength.length + 1,
+        name:new_product_name,
+        images:new_product_image_url
+    })
+  
+  
+    renderProductList();
+    $("#loader").hide();
+      //This will clear the value in all scenarious
+      var name_input = document.getElementById("name")
+          name_input.value =""
+      var url_input = document.getElementById("images")
+          url_input.value =""
+      var price_input = document.getElementById("price")
+         price_input.value = ""
+    // e.preventDefault();
+  
+  });
+  
+
