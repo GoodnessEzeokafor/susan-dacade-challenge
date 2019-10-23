@@ -156,7 +156,7 @@ $('#addProductBtn').click(async function(){
     console.log("Name:",new_product_name)
     console.log("Price:",new_product_price)
     console.log("Image Url:",new_product_image_url)
-    const shit = await contractCall('add_new_product', [new_product_name, new_product_price, new_product_image_url],0);
+    const new_shit = await contractCall('add_new_product', [new_product_name, new_product_price, new_product_image_url],0);
     console.log("SAVED TO THE DB", shit)
     // bucketlistArr.push({
     //   index_counter: bucketlistLength.length + 1,
@@ -184,3 +184,19 @@ $('#addProductBtn').click(async function(){
   });
   
 
+// Buy A Product
+$("#productListBody").on("click",".buyBtn", async function(event){
+  $("#loader").show();
+
+  const dataIndex = event.target.id
+  const foundIndex = productListArr.findIndex(product => product.id === dataIndex)
+  const value = $(".buyBtn")[foundIndex] ;
+
+  console.log("Found Index:", foundIndex)
+  console.log("-----------------")
+  console.log("Data Index:", dataIndex)
+  console.log("--------------------------")
+  console.log("Value:", value)
+  console.log("Just Clicked The Buy Button")
+  event.preventDefault();
+});

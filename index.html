@@ -41,12 +41,14 @@
                             <th scope="col">Price ($)</th>
                             <th scope="col">Owner</th>
                             <th scope="col">Purchased</th>
+                            <th scope="col">Buy Product</th>
                             </tr>
                         </thead>
                         <tbody id="productListBody">
                             <!-- <div id="productListBody">
                             </div> -->
-                            <tr id="loading">...LOADING...</tr>
+                            <span id="loading"></span>
+                                                          
                         </tbody>
                     </table>
                 </div>
@@ -84,7 +86,7 @@
             <td>{{price}}</td>
             <td>{{owner}}</td>
             <td>{{ purchased}}</td>
-            <td><button class="btn btn-dark">BUY</button></td>
+            <td><button class="btn btn-dark buyBtn" id="{{id}}" class="buyBtn">BUY</button></td>
              <tr>                              
     {{/productListArr }}
                     
