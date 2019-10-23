@@ -190,8 +190,11 @@ $("#productListBody").on("click",".buyBtn", async function(event){
   $("#loader").show();
 
   const dataIndex = event.target.id
-  const foundIndex = productListArr.findIndex(product => product.id === dataIndex)
-  const value = $(".buyBtn")[foundIndex] ;
+  const purchased_product = await contractCall('buy_product', [dataIndex],0);
+  console.log("Purchase:", purchased_product)
+  
+  // const foundIndex = productListArr.findIndex(product => product.id === dataIndex)
+  // const value = $(".buyBtn")[foundIndex] ;
 
   console.log("Found Index:", foundIndex)
   console.log("-----------------")
