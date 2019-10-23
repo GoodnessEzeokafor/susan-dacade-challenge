@@ -138,6 +138,7 @@ window.addEventListener('load', async() => {
         id:getProductList.id,
         price:getProductList.price,
         url:getProductList.images,
+        owner:getProductList.owner,
         purchased:getProductList.purchased
       })
     }

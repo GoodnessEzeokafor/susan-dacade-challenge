@@ -45,7 +45,16 @@
                     <tbody>
                         <!-- <div id="productListBody">
                         </div> -->
-                        <tr id="productListBody"></tr>
+                        <tr id="productListBody">
+                                <th scope="row">{{id}}</th>
+                                <td><img src={{url}} width=100 height=79></td>
+                                <td>{{name}}</td>
+                                <td>{{price}}</td>
+                                <td>{{owner}}</td>
+                                <td>{{ purchased}}</td>
+                                <td><button class="btn btn-dark">BUY</button></td>
+                                                
+                        </tr>
                     </tbody>
                 </table>
                 <!-- FORM -->
@@ -73,7 +82,7 @@
         {{#productListArr}}
             
             <th scope="row">{{id}}</th>
-            <td><img src={{url}} width=100 height=100></td>
+            <td><img src={{url}} width=100 height=79></td>
             <td>{{name}}</td>
             <td>{{price}}</td>
             <td>{{owner}}</td>
