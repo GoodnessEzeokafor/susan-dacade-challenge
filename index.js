@@ -156,8 +156,8 @@ $('#addProductBtn').click(async function(){
     console.log("Name:",new_product_name)
     console.log("Price:",new_product_price)
     console.log("Image Url:",new_product_image_url)
-    const new_shit = await contractCall('add_new_product', [new_product_name, new_product_price, new_product_image_url],0);
-    console.log("SAVED TO THE DB", shit)
+    const new_product = await contractCall('add_new_product', [new_product_name, new_product_price, new_product_image_url],0);
+    console.log("SAVED TO THE DB", new_product)
     // bucketlistArr.push({
     //   index_counter: bucketlistLength.length + 1,
     //   bucketlist: new_bucketlist,
