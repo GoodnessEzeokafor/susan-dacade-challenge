@@ -43,8 +43,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <div id="productListBody">
-                        </div>
+                        <!-- <div id="productListBody">
+                        </div> -->
+                        <tr id="productListBody"></tr>
                     </tbody>
                 </table>
                 <!-- FORM -->
@@ -70,7 +71,7 @@
     <script id="template" type="x-tmpl-mustache">
             
         {{#productListArr}}
-            <tr>
+            
             <th scope="row">{{id}}</th>
             <td><img src={{url}} width=100 height=100></td>
             <td>{{name}}</td>
@@ -78,7 +79,7 @@
             <td>{{owner}}</td>
             <td>{{ purchased}}</td>
             <td><button class="btn btn-dark">BUY</button></td>
-            </tr>                               
+                                           
     {{/productListArr }}
                     
     </script>
