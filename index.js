@@ -165,7 +165,7 @@ $('#addProductBtn').click(async function(){
     // })
     productListArr.push({
         index_counter: productListArr.length + 1,
-        id:parseintproductListArr.length + 1,
+        id:productListArr.length + 1,
         name:new_product_name,
         images:new_product_image_url
     })
