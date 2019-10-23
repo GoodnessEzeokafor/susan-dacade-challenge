@@ -148,7 +148,7 @@ window.addEventListener('load', async() => {
 
   // ADD AN ITEM
   //If someone clicks to register a moment, get the input and execute the registerCall
-$('##addProductBtn').click(async function(){
+$('#addProductBtn').click(async function(){
     $("#loader").show();
     console.log("Button Clicked")
     const new_product_name = ($('#name').val());
