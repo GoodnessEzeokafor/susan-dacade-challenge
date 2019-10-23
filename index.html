@@ -71,12 +71,13 @@
             
         {{#productListArr}}
             <tr>
-            <th scope="row">1</th>
+            <th scope="row">{{id}}</th>
             <td><img src={{url}} width=100 height=100></td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>True</td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+            <td>{{owner}}</td>
+            <td>{{ purchased}}</td>
+            <td><button class="btn btn-dark">BUY</button></td>
             </tr>                               
     {{/productListArr }}
                     
