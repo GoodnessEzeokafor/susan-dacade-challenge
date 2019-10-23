@@ -70,11 +70,9 @@ contract Market =
     
     // sends the amount
     
-    Chain.spend(_seller, Call.value) 
-    
-    
+    Chain.spend(_seller, Call.value)    
 `
-contractAddress = "ct_NkqdVZ56wDdTiLYz9rcSVLKLh1sAUYdYqKdz94MMEAf7jKNCt"
+contractAddress = "ct_2XVUWWBimTVQgUiNTZ7pL3nGKMmGvBaiUQYunUbuczyjA2caCV"
 var client = null // client defuault null
 var productListArr = [] // empty arr
 var productListLength = 0 // empty product list lenghth

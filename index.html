@@ -31,28 +31,31 @@
         <div class="row">
             <div class="col-md-7 col-xs-12">
                 <h3>ITEMS ON æNAIJA</h3>
-                <table class="table table-responsive col-xs-12">
-                    <thead class="thead-dark">
-                        <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Image</th>
-                        <th scope="col">Product Name</th>
-                        <th scope="col">Price ($)</th>
-                        <th scope="col">Owner</th>
-                        <th scope="col">Purchased</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <div id="productListBody">
-                        </div> -->
-                        <tr id="productListBody">
-                                <th id="loading">...LOADING...</th>
-                                                
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive col-xs-12">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Price ($)</th>
+                            <th scope="col">Owner</th>
+                            <th scope="col">Purchased</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <div id="productListBody">
+                            </div> -->
+                            <tr id="productListBody">
+                                    <th id="loading">...LOADING...</th>
+                                                    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <!-- FORM -->
-                <h3>ADD AN ITEM ON æNAIJA</h3>
+                <h3>SELL ON æNAIJA</h3>
                 <hr />
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Product Name">
@@ -60,15 +63,16 @@
                 </div>
                 <div class="form-group">
                     <input type="number" class="form-control" id="price" aria-describedby="priceHelp" placeholder="Enter Product Price">
-                    <small id="priceHelp" class="form-text text-muted">Price Of The Item You Want To Sell</small>
+                    <small id="priceHelp" class="form-text text-muted">Price Of The Item You Want To Sell ( æ tokens)</small>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="images" aria-describedby="urlHelp" placeholder="Url Image Of The Item You Want To Sell">
                     <small id="imageHelp" class="form-text text-muted">Url Image Of The Item You Want To Sell</small>
                 </div>
                 
-                <button type="button" id="#addProductBtn" class="btn btn-dark">Submit</button>
+                <button type="submit" id="addProductBtn" class="btn btn-dark btn-block mb-5">Submit</button>
                 <!-- ENDFORM -->
+                <p class="text-center">Copyright &copy; Powered By æNAIJA Team </p>
             </div>
         </div>
     </div>
