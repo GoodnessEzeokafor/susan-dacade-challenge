@@ -199,11 +199,10 @@ $("#productListBody").on("click",".buyBtn", async function(event){
   // const foundIndex = productListArr.findIndex(product => product.id === dataIndex)
   // const value = $(".buyBtn")[foundIndex] ;
 
-  console.log("Found Index:", foundIndex)
   console.log("-----------------")
   console.log("Data Index:", dataIndex)
   console.log("--------------------------")
-  console.log("Value:", value)
+  
   console.log("Just Clicked The Buy Button")
   event.preventDefault();
 });
