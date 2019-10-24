@@ -166,8 +166,11 @@ $('#addProductBtn').click(async function(){
     productListArr.push({
         index_counter: productListArr.length + 1,
         id:productListArr.length + 1,
-        name:new_product_name,
-        images:new_product_image_url
+        name:new_product.name,
+        url:new_product.images,
+        purchased:new_product.purchased   ,
+        owner:new_product.owner,
+        price:new_product.price
     })
   
   
